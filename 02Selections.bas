@@ -1,0 +1,45 @@
+Sub example()
+    'Select cell A8
+    Range("A8").Select
+    
+    'Activating of Sheet 2
+    Sheets("Sheet2").Activate
+    
+    'Selecting of Cell A8
+    Range("A8").Select
+      
+    'Selecting A8 and C5
+    Range("A8, C5").Select
+        
+    'Selecting cells A1 to A8
+    Range("A1:A8").Select
+          
+    'Selecting cells from the "my_range" range
+    Range("my_range").Select
+            
+    'Selecting the cell in row 8 and column 1
+    Cells(8, 1).Select
+              
+    'Random selection of a cell from row 1 to 10 and column 1
+    Cells(Int(Rnd * 10) + 1, 1).Select
+    'Translation:
+    'Cells([random_number_between_1_and_10], 1).Select
+                
+    'Selecting a cell (described in relation to the cell that is currently active)
+    ActiveCell.Offset(2, 1).Select
+               
+    'Selecting rows 2 to 6
+    Range("2:6").Select
+                    
+    'Selecting rows 2 to 6
+    Rows("2:6").Select
+                      
+    'Selecting columns B to G
+    Range("B:G").Select
+                        
+    'Selecting columns B to G
+    Columns("B:G").Select
+    
+End Sub
+  
+
